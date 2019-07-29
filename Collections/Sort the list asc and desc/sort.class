@@ -1,0 +1,29 @@
+package com.company;
+import java.util.*;
+
+public class Main {
+
+	public static void sortAsc(ArrayList<Integer> arr)
+	{
+		Collections.sort(arr);
+		System.out.println("List sorted in Ascending Order:"+ arr);
+	}
+	public static void sortDesc(ArrayList<Integer> arr)
+	{
+		Collections.sort(arr);
+		Collections.reverse(arr);
+		System.out.println("List Sorted in Descending Order:"+ arr);
+	}
+
+  public static void main(String[] args) 
+  {
+	ArrayList<Integer>arr=new ArrayList<Integer>();
+	arr.add(3);
+	arr.add(2);
+	arr.add(6);
+	arr.add(10);
+	arr.add(8);
+	sortAsc(arr);
+	sortDesc(arr);
+    }
+}

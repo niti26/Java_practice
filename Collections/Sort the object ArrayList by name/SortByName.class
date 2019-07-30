@@ -1,0 +1,30 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.lang.*;
+
+class Comp implements Comparator<Employee>{
+
+    @Override
+    public int compare(Employee o1, Employee o2)
+    {
+        String Employeename1=o1.getName().toUpperCase();
+        String Employeename2=o2.getName().toUpperCase();
+        return Employeename1.compareTo(Employeename2);
+    }
+}
+public class SortByName {
+     Comp obj=new Comp();
+    public static void main(String[] args) {
+        ArrayList<Employee>el=new ArrayList<Employee>();
+        el.add(new Employee(104,"Alica"));
+        el.add(new Employee(102,"James"));
+        el.add(new Employee(103,"John"));
+        el.add(new Employee(109,"Tom"));
+        Collections.sort(el, new Comp());
+        System.out.println(el);
+
+    }
+}

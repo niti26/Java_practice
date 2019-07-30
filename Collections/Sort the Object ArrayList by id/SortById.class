@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.lang.*;
 
-
-
 class Comp implements Comparator<Employee>{
 
     @Override
@@ -24,7 +22,7 @@ class Comp implements Comparator<Employee>{
     }
 
 }
-public class sortById {
+public class SortById {
      
      public static void main(String[] args) {
      //Create an ArrayList of Employee class object.
@@ -39,6 +37,4 @@ public class sortById {
         System.out.println(el);
 
     }
-
-
 }

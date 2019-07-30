@@ -1,0 +1,44 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.lang.*;
+
+
+
+class Comp implements Comparator<Employee>{
+
+    @Override
+    public int compare(Employee o1, Employee o2)
+    {
+        if(o1.getId()>o2.getId())
+        {
+            return 1;
+        }
+        if(o1.getId()<o2.getId())
+        {
+            return -1;
+        }
+        return 0;
+    }
+
+}
+public class sortById {
+     
+     public static void main(String[] args) {
+     //Create an ArrayList of Employee class object.
+        ArrayList<Employee>el=new ArrayList<Employee>();
+        el.add(new Employee(104,"Alica"));
+        el.add(new Employee(102,"James"));
+        el.add(new Employee(103,"John"));
+        el.add(new Employee(109,"Tom"));
+        
+        //Sort the Employee class object by id
+        Collections.sort(el,new Comp());
+        System.out.println(el);
+
+    }
+
+
+}

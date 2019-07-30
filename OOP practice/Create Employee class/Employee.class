@@ -1,0 +1,5 @@
+class Employee{
+int id;
+String employee_name;
+int salary;
+}

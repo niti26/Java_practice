@@ -1,0 +1,27 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.lang.*;
+
+
+
+
+public class RemoveDuplicate {
+
+    public static void main(String[] args) {
+        //Creating HashMap
+        HashMap<Employee,String>hs=new HashMap<Employee, String>();
+        hs.put(new Employee(1,"James"),"A");
+        hs.put(new Employee(2,"Alica"),"B");
+        hs.put(new Employee(3,"Jeff"),"C");
+        hs.put(new Employee(1,"James"),"D");
+        hs.put(new Employee(7,"Lin"),"E");
+        hs.put(new Employee (1,"James"),"A");
+        System.out.println(hs);
+
+    }
+
+
+}

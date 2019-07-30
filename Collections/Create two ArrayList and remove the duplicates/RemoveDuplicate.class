@@ -1,0 +1,40 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.lang.*;
+
+
+
+
+public class RemoveDuplicate {
+
+    public static void main(String[] args) {
+
+        //Two ArrayList with duplicate data
+        ArrayList<Integer>arr1=new ArrayList<Integer>();
+        ArrayList<Integer>arr2=new ArrayList<Integer>();
+
+        //add data to arraylist
+
+        arr1.add(1);
+        arr1.add(6);
+        arr1.add(80);
+        arr1.add(100);
+        arr2.add(1);
+        arr2.add(100);
+        arr2.add(76);
+        arr2.add(67);
+        arr1.addAll(arr2);
+
+        System.out.println("The List with duplicates:"+ arr1);
+        
+        //Create LinkedHashSet to remove duplicates
+        LinkedHashSet<Integer>set=new LinkedHashSet<Integer>();
+        set.addAll(arr1);
+
+        System.out.println("The list without duplicates:"+ set);
+
+    }
+}

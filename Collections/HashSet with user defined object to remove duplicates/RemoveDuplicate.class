@@ -1,0 +1,26 @@
+package com.company;
+import java.util.ArrayList;
+import java.util.*;
+import java.util.Collections;
+import java.util.Comparator;
+import java.lang.*;
+
+public class RemoveDuplicate {
+
+    public static void main(String[] args) {
+    
+        //Creating a HashSet for Employee class
+        HashSet<Employee>hs=new HashSet<Employee>();
+        
+        //Adding object of Employee class to HashSet.
+        hs.add(new Employee(101,"Alica"));
+        hs.add(new Employee(101,"Alica"));
+        hs.add(new Employee(104,"James"));
+        hs.add(new Employee(110,"Kate"));
+        hs.add(new Employee(100, "Jeff"));
+        System.out.println(hs);
+
+    }
+
+
+}

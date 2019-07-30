@@ -1,0 +1,54 @@
+package com.company;
+
+public final class Employee {
+    private int id;
+    private  String name;
+      
+    //constructor  
+    public Employee(int id, String name)
+    {
+        super();
+        this.id=id;
+        this.name=name;
+    }
+    //get method to get id.
+    public int getId()
+    {
+        return id;
+    }
+    //get method to get name.
+    public String getName()
+    {
+        return name;
+    }
+
+    //override HashCode method
+    @Override
+    public int hashCode()
+    {
+        return id;
+    }
+
+    //Override equals method
+    @Override
+    public boolean equals(Object obj)
+    {
+        Employee e2=(Employee)obj;
+        if(this.id==e2.id && this.name.equals(e2.name))
+        {
+            return true;
+        }
+        return false;
+
+    }
+    
+    //override toString method
+    @Override
+    public String toString()
+    {
+      return id+" "+name;
+    }
+
+
+}
+
